@@ -1,0 +1,21 @@
+                    USER
+                      │
+                      ▼
+              Orchestrator Agent
+                      │
+          ┌───────────┼───────────┐
+          │           │           │
+          ▼           ▼           ▼
+   Resume Agent   DSA Agent  Interview Agent
+          │
+          ▼
+    Progress Agent
+          │
+          ▼
+    Scheduler Agent
+
+External Systems:
+
+Google Drive MCP
+Google Calendar MCP
+GitHub MCP
