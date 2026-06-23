@@ -1,0 +1,21 @@
+{
+    "latest_skill": "Python",
+    "user_profile": {
+        "name": "Chandra",
+        "target_role": "Backend Developer"
+    },
+    "skills": [
+        "Python",
+        "Sql",
+        "Git"
+    ],
+    "roadmap_progress": [
+        "Arrays",
+        "Strings"
+    ],
+    "interview_scores": [
+        75,
+        82,
+        46
+    ]
+}
