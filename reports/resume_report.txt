@@ -1,0 +1,1 @@
+{'ats_score': 85, 'strengths': ['Python', 'SQL', 'Git']}
