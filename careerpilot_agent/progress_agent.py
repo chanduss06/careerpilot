@@ -1,4 +1,4 @@
- from google.adk.agents import Agent
+from google.adk.agents import Agent
 
 from src.tools.progress_summary_tool import (
     generate_progress_summary
@@ -6,6 +6,11 @@ from src.tools.progress_summary_tool import (
 
 from src.tools.goal_tracker_tool import (
     track_goal
+)
+
+from src.tools.github_tools import (
+    fetch_repo_stats,
+    fetch_recent_commits
 )
 
 progress_agent = Agent(
@@ -33,6 +38,8 @@ progress_agent = Agent(
 
     tools=[
         generate_progress_summary,
-        track_goal
+        track_goal,
+        fetch_repo_stats,
+        fetch_recent_commits
     ]
 )

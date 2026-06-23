@@ -6,6 +6,10 @@ from src.tools.skill_gap_roadmap_tool import generate_skill_gap_roadmap
 from src.tools.job_recommendation_tool import recommend_jobs
 from src.tools.progress_tracker_tool import track_progress
 
+from src.tools.report_export_tool import (
+    export_resume_report
+)
+
 resume_agent = Agent(
     name="resume_agent",
     model="gemini-2.5-flash",
@@ -56,10 +60,11 @@ resume_agent = Agent(
     """,
 
     tools=[
-    analyze_resume,
-    analyze_job_match,
-    generate_skill_gap_roadmap,
-    recommend_jobs,
-    track_progress
+        analyze_resume,
+        analyze_job_match,
+        generate_skill_gap_roadmap,
+        recommend_jobs,
+        track_progress,
+        export_resume_report
     ]
 )

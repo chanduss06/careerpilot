@@ -1,4 +1,4 @@
- from google.adk.agents import Agent
+from google.adk.agents import Agent
 
 from src.tools.study_schedule_tool import (
     create_study_schedule
@@ -6,6 +6,10 @@ from src.tools.study_schedule_tool import (
 
 from src.tools.reminder_tool import (
     create_reminder
+)
+
+from src.tools.calendar_tools import (
+    schedule_study_session
 )
 
 scheduler_agent = Agent(
@@ -32,6 +36,7 @@ scheduler_agent = Agent(
 
     tools=[
         create_study_schedule,
-        create_reminder
+        create_reminder,
+        schedule_study_session
     ]
 )
