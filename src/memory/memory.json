@@ -5,16 +5,19 @@
         "target_role": "Backend Developer"
     },
     "skills": [
-        "Sql",
-        "Python",
         "SQL",
-        "Git"
+        "Python",
+        "Git",
+        "Sql"
     ],
     "roadmap_progress": [
         "Arrays",
         "Strings"
     ],
     "interview_scores": [
+        75,
+        82,
+        46,
         75,
         82,
         46,
